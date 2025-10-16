@@ -10,7 +10,7 @@ services:
     image: eiparfenov/hack_minsk
     environment:
       ConnectionStrings__Postgres: 'Host=pgvector;Port=5432;Database=minsk_hack_db;Password=password;Username=postgres'
-      ConnectionStrings__MlService: 'http://mlService:5000'
+      ConnectionStrings__MlService: 'http://ml_service:5000'
     ports:
       - "8080:8080"
     networks:
@@ -21,7 +21,7 @@ services:
       - "3000:3000"
     environment:
       NEXT_PUBLIC_API: "http://localhost:8080"
-  mlService:
+  ml_service:
     image: adiutant/t1:v1
     networks:
       db-network:
