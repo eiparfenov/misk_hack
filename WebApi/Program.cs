@@ -14,8 +14,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(opts =>
     opts.UseNpgsql(builder.Configuration.GetConnectionString("Postgres"),config => config.UseVector());
     opts.UseSnakeCaseNamingConvention();
 });
-builder.Services.AddHostedService<MigrateDb<ApplicationDbContext>>();
 builder.Services.AddHostedService<FillEmbedings>();
+// builder.Services.AddHostedService<MigrateDb<ApplicationDbContext>>();
 
 builder.Services.AddHttpClient<IEmbedingsService, EmbeddingService>(opts =>
 {

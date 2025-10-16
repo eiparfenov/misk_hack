@@ -1,0 +1,6 @@
+[submodule "t1_minsk_front"]
+	path = t1_minsk_front
+	url = https://github.com/Midnight-Knight/t1_minsk_front
+[submodule "T1_Hack"]
+	path = T1_Hack
+	url = https://github.com/serfertor/T1_Hack
