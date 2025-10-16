@@ -11,5 +11,3 @@ git submodule update --recursive
 3. Выполнить ```docker compose up```
 4. _Подождать_ пока сервисы запустятся
 5. Открыть фронтенд на http://localhost:3000
-
-## Фронтендdocker
